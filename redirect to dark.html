@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="redirect_style.css">
+</head>
+<body>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- Loading  bar  -->
+<div class="loading-container">
+  <p class="loading-message">Loading...</p>
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+</div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="app.js"></script>
+<script>
+
+  setTimeout(function() {
+    window.location.href = "dark.html";
+  }, 3000); 
+
+  let progress = 0;
+  const progressBar = document.querySelector('.progress');
+  const interval = setInterval(function() {
+    progress += 1;
+    progressBar.style.width = progress + '%';
+    if (progress >= 100) {
+      clearInterval(interval); 
+    }
+  }, 30); 
+</script>
+
+</body>
+</html>
