@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <div class="top-banner">
+         
+    <img src="logo.jpg" alt="logo" class="logo">
+    <div class="nav-buttons">
+        <a href="https://rgtr.lu/en/">
+        <button class="nav-button">RGTR</button>
+    </a>
+    <a href="https://www.vdl.lu/en/city/a-glance/multiplicity">
+        <button class="nav-button">Multiplicity</button>
+    </a>
+    <a href="redirect to dark.html">
+        <button class="nav-button">🌙 Dark Mode</button>
+    </a>
+    </div>
+ 
+</div>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="form-row">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your given name">
+    </div>
+    <div class="form-row">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+    </div>
+    <div class="form-row">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="Luxembourg">Luxembourg / Letzebeuerg / Luxemburg</option>
+        <option value="Belgium">Belgie / Belgique</option>
+        <option value="Nederland">Nederland</option>
+      </select>
+    </div>
+    <div class="address">
+      <div class="form-row">
+        <label class="address-label" for="1line">Address Line No.1</label>
+        <input class="address-input" type="text" id="1line" name="1line" placeholder=""> 
+      </div>
+      <div class="form-row">
+        <label class="address-label" for="2line">Address Line No.2</label>
+        <input class="address-input" type="text" id="2line" name="2line" placeholder="">
+      </div>
+      <div class="form-row">
+        <label class="address-label" for="city">City / Town</label>
+        <input class="address-input" type="text" id="city" name="city" placeholder="">
+      </div>
+      <div class="form-row">
+        <label class="address-label" for="canton">Canton</label>
+        <input class="address-input" type="text" id="canton" name="canton" placeholder="">
+      </div>
+      <div class="form-row">
+        <label class="address-label" for="pn">Phone Number</label>
+        <input class="address-input" type="text" id="pn" name="pn" placeholder="🇱🇺 +352">
+      </div>
+      <div class="form-row">
+        <label for="subject">Notes</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+      </div>
+    </div>
+    <div class="form-row">
+      <input type="submit" value="Submit">
+    </div>
+    <div class="form-row">
+      <input type="cancel" value="Cancel">
+    </div>
+  </form>
+</div>
+
+
+</body>
+</html>

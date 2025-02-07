@@ -1,0 +1,274 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #b6d4ec;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #60b8ff
+  ;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("Background.jpg");
+    flex-direction: column;
+}
+
+/* Top Banner */
+.top-banner {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(28, 100, 124, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    background-color: white;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* Brochure container */
+.brochure {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 100px; 
+}
+
+/* Panel styling */
+.panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-right: 1px solid #ddd;
+}
+
+
+.panel.right {
+    border-right: none;
+}
+
+/* Hover effect */
+.panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #a4d6ff;
+}
+
+.panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.panel p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .brochure {
+        flex-direction: column;
+    }
+    
+    .panel {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .panel:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Quote Styling */
+.super-fancy-quote {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 3px solid #45607e;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+/* Image Styling */
+#Train, #Tram, #Bus {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+.rights{
+    font-size: 15px;
+    font-style:oblique;
+    font-family: serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .address {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .address-label {
+    font-weight: bold;
+  }
+  
+  .address-input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%; 
+  }
+  
+  input[type="submit"] {
+    width: 100%; 
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; 
+  }
+  input[type="cancel"] {
+    width: 100%; 
+    padding: 10px;
+    border: none;
+    background-color: #c20000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  input[type="cancel"]:hover {
+    background-color: #ff0000; 
+  }
+  
+  @media (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr; 
+    }
+  
+    .address {
+      grid-template-columns: 1fr; 
+  }
+  
